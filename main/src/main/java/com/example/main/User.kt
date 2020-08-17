@@ -23,7 +23,7 @@ val json2 = "{\n" +
         "\t\t\"artifact\": \"android\"\n" +
         "\t}\n" +
         "}"
-val json3 = "{\n" +
+/*val json3 = "{\n" +
         "\t\"name\": \"zhaoys \",\n" +
         "\t\"userId \": null,\n" +
         "\t\"h \": 17.5,\n" +
@@ -31,7 +31,7 @@ val json3 = "{\n" +
         "\t\t\"name\": \"centa\",\n" +
         "\t\t\"artifact\": \"android\"\n" +
         "\t}\n" +
-        "}"
+        "}"*/
 
 
 @JsonClass(generateAdapter = true)

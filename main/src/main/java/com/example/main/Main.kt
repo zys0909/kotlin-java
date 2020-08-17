@@ -1,8 +1,6 @@
 package com.example.main
 
-import com.ktx.test.Test
 import com.example.main.jsonadapter.NullJsonFactory
-import com.ktx.test.test3
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
 import java.math.BigDecimal
@@ -34,9 +32,9 @@ object Main {
         when (flag) {
             2 -> numTest()
             3 -> {
-                val jsonAdapter = build.adapter(Test::class.java)
+              /*  val jsonAdapter = build.adapter(Test::class.java)
                 val fromJson = jsonAdapter.fromJson(test3)
-                print(fromJson)
+                print(fromJson)*/
             }
             4 -> {
                 val adapter = build.adapter(UserTest::class.java)
@@ -44,9 +42,9 @@ object Main {
                 println("main -> $toJson")
             }
             5->{
-                val jsonAdapter = build.adapter(UserTest::class.java)
+              /*  val jsonAdapter = build.adapter(UserTest::class.java)
                 val fromJson = jsonAdapter.fromJson(json3)
-                print(fromJson)
+                print(fromJson)*/
             }
         }
 

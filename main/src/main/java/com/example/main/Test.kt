@@ -1,4 +1,4 @@
-package com.ktx.test
+package com.example.main
 
 import com.squareup.moshi.JsonClass
 
@@ -11,9 +11,9 @@ val test1 = "{\n" +
 val test2 = "{\n" +
         "\t\"list\": \"add\"\n" +
         "}"
-val test3 = "{\n" +
+/*val test3 = "{\n" +
         "\t\"list\": [\"add\", 3]\n" +
-        "}"
+        "}"*/
 /**
  * 描述:
  *
