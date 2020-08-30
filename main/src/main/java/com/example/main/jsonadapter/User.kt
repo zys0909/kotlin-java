@@ -1,4 +1,4 @@
-package com.example.main
+package com.example.main.jsonadapter
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
@@ -36,23 +36,23 @@ val json2 = "{\n" +
 
 @JsonClass(generateAdapter = true)
 data class User(
-    val group: Group = Group(),
-    @Json(name = "h ")
+        val group: Group = Group(),
+        @Json(name = "h ")
     val h: Double = 0.0, // 17.5
-    val list: List<Int> = listOf(),
-    val name: String = "", // zhaoys
-    @Json(name = "userId ")
+        val list: List<Int> = listOf(),
+        val name: String = "", // zhaoys
+        @Json(name = "userId ")
     val userId: String = "" // 123
 )
 
 @JsonClass(generateAdapter = true)
 data class UserTest(
-    val group: Group? = null,
-    @Json(name = "h ")
+        val group: Group? = null,
+        @Json(name = "h ")
     val h: Double? = null, // 17.5
-    val list: List<Int>? = null,
-    val name: String? = "", // zhaoys
-    @Json(name = "userId ")
+        val list: List<Int>? = null,
+        val name: String? = "", // zhaoys
+        @Json(name = "userId ")
     val userId: String  // 123
 )
 

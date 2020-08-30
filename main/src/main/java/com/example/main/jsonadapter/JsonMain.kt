@@ -1,13 +1,12 @@
-package com.example.main
+package com.example.main.jsonadapter
 
-import com.example.main.jsonadapter.NullJsonFactory
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
 import java.math.BigDecimal
 import java.math.RoundingMode
 import java.text.NumberFormat
 
-object Main {
+object JsonMain {
     var flag = 0
 
     @JvmStatic
@@ -38,7 +37,7 @@ object Main {
             }
             4 -> {
                 val adapter = build.adapter(UserTest::class.java)
-                val toJson = adapter.toJson(UserTest(name = "abc",userId = ""))
+                val toJson = adapter.toJson(UserTest(name = "abc", userId = ""))
                 println("main -> $toJson")
             }
             5->{
