@@ -22,7 +22,7 @@ object MainProxy {
 //        val proxyTest = proxyTest(AMessage())
 //        (proxyTest as Message).message()
         runApi()
-        runMyApi()
+//        runMyApi()
 
     }
 

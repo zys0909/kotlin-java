@@ -15,8 +15,12 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 class ApiService {
     companion object {
         private val retrofit by lazy {
+            val okHttpClient = OkHttpClient.Builder()
+                    .addInterceptor(HttpLoggingInterceptor())
+                    .build()
             Retrofit.Builder()
                     .baseUrl("https://restapi.amap.com")
+                    .client(okHttpClient)
                     .addConverterFactory(MoshiConverterFactory.create())
                     .build()
         }

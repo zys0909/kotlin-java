@@ -9,6 +9,6 @@ package com.example.main.rxjava
 object RxJavaMain {
     @JvmStatic
     fun main(args: Array<String>) {
-
+        println("abc".compareTo("a"))
     }
 }
